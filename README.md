@@ -37,6 +37,43 @@
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-indigo-600">الأسئلة الشائعة</h2>
+      <div class="text-right space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">ما هي منصة Made By Me؟</h3>
+          <p class="text-gray-600">منصة عربية تتيح للمصممين والمبدعين إنشاء متاجر رقمية وبيع تصاميمهم بسهولة مع أدوات تسويق ودعم مدمجة.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">ما هي العمولة على كل عملية بيع؟</h3>
+          <p class="text-gray-600">5% فقط، وتقل في الخطط المدفوعة.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">كيف أسحب أرباحي؟</h3>
+          <p class="text-gray-600">يتم السحب يدويًا عبر التحويل البنكي.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">هل يمكنني تجربة المنصة مجانًا؟</h3>
+          <p class="text-gray-600">نعم، الخطة المجانية تتيح لك إنشاء متجر ورفع حتى 3 تصاميم لمدة شهر كامل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="bg-indigo-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-xl sm:text-2xl font-bold text-indigo-600 mb-4">انضم الآن واحصل على شهر مجاني!</h2>
+      <p class="text-gray-700 mb-6">أدخل بريدك الإلكتروني وسنرسل لك دعوة للانضمام للمنصة فور إطلاقها.</p>
+      <form class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input type="email" required placeholder="بريدك الإلكتروني" class="w-full sm:w-auto px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-indigo-500 transition">سجّل الآن</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Scripts -->
   <script>
     // إعداد العد التنازلي لمدة 15 يومًا
