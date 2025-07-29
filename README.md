@@ -15,12 +15,6 @@
     .feature h3 {color: #3730a3; margin-top: 0; margin-bottom: 8px;}
     .offer {background: #6366f1; color: #fff; padding: 16px 24px; border-radius: 12px; font-size: 1.2rem; margin-bottom: 24px; text-align: center; font-weight: bold; letter-spacing: 1px; box-shadow: 0 4px 16px rgba(99,102,241,0.12);}
     .timer {font-size: 2rem; color: #3730a3; text-align: center; margin-bottom: 32px; font-weight: bold; letter-spacing: 2px;}
-    .questions-form {background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 28px; margin-bottom: 30px; box-shadow: 0 2px 10px #6366f108;}
-    .questions-form label {font-weight: bold; color: #3730a3; display: block; margin-bottom: 6px;}
-    .questions-form textarea, .questions-form input[type="text"] {width: 100%; border-radius: 6px; border: 1px solid #d1d5db; padding: 10px; margin-bottom: 16px; font-size: 1rem;}
-    .questions-form button {background: linear-gradient(90deg, #6366f1 0%, #3730a3 100%); color: #fff; font-size: 1rem; font-weight: bold; padding: 10px 32px; border: none; border-radius: 8px; cursor: pointer;}
-    .questions-form button:hover {background: linear-gradient(90deg, #3730a3 0%, #6366f1 100%);}
-    .success-message2 {color: #16a34a; text-align: center; margin-top: 10px; font-weight: bold;}
     .googleform-section {margin: 50px auto 0 auto; max-width: 700px;}
     @media (max-width: 600px) {
       .features {flex-direction: column;}
@@ -83,24 +77,7 @@
     </div>
     <!-- نموذج MailerLite ينتهي هنا -->
 
-    <!-- أسئلة المستخدمين -->
-    <form class="questions-form" id="questionsForm">
-      <h3>ساعدنا في تطوير MADE BY ME! (اختياري)</h3>
-      <label for="q1">ما أكبر تحدٍّ تواجهه كمصمم جرافيك في بيع أو عرض أعمالك الرقمية؟</label>
-      <textarea name="q1" id="q1" rows="2"></textarea>
-      <label for="q2">ما الأدوات أو المنصات التي تستخدمها حاليًا في التصميم أو التسويق؟</label>
-      <input type="text" name="q2" id="q2">
-      <label for="q3">هل سبق لك تجربة بيع تصاميمك عبر الإنترنت؟ إذا كانت الإجابة نعم، صف تجربتك بإيجاز.</label>
-      <textarea name="q3" id="q3" rows="2"></textarea>
-      <label for="q4">ما الميزة التي تتمنى وجودها في منصة للمصممين؟</label>
-      <textarea name="q4" id="q4" rows="2"></textarea>
-      <label for="q5">هل أنت مهتم بالعمل عن بعد أو السفر أثناء العمل (Digital Nomad)؟</label>
-      <input type="text" name="q5" id="q5">
-      <button type="submit">إرسال الإجابات</button>
-      <div class="success-message2" id="successMessage2" style="display:none;">
-        شكراً لمشاركتك، ستساعدنا إجاباتك في تطوير المنصة!
-      </div>
-    </form>
+    <!-- تم حذف قسم الأسئلة المباشرة -->
 
     <h2 style="color:#6366f1; text-align:center; margin-top:30px;">خصائص منصة MADE BY ME</h2>
     <div class="features">
@@ -177,14 +154,6 @@
         document.getElementById("timer").innerHTML = "انتهى العرض";
       }
     }, 1000);
-
-    // معالجة نموذج الأسئلة (يرسل فقط رسالة نجاح، عدل هنا للإرسال الحقيقي)
-    document.getElementById('questionsForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // هنا يمكنك ربط النموذج بـ Google Forms أو Airtable أو بريدك
-      document.getElementById('successMessage2').style.display = 'block';
-      document.getElementById('questionsForm').reset();
-    });
   </script>
 </body>
 </html>
