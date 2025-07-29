@@ -21,7 +21,20 @@
     .questions-form button {background: linear-gradient(90deg, #6366f1 0%, #3730a3 100%); color: #fff; font-size: 1rem; font-weight: bold; padding: 10px 32px; border: none; border-radius: 8px; cursor: pointer;}
     .questions-form button:hover {background: linear-gradient(90deg, #3730a3 0%, #6366f1 100%);}
     .success-message2 {color: #16a34a; text-align: center; margin-top: 10px; font-weight: bold;}
-    @media (max-width: 600px) {.features {flex-direction: column;}}
+    .googleform-section {margin: 50px auto 0 auto; max-width: 700px;}
+    @media (max-width: 600px) {
+      .features {flex-direction: column;}
+      .googleform-section {max-width: 99vw;}
+    }
+    iframe.googleform {
+      width: 100%;
+      min-height: 950px;
+      border: none;
+      border-radius: 12px;
+      background: #fafbff;
+      box-shadow: 0 2px 8px #6366f120;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -120,6 +133,19 @@
         <p>عمولة منخفضة واشتراكات اختيارية لمزايا متقدمة تناسب جميع الاحتياجات.</p>
       </div>
     </div>
+
+    <!-- Google Form Section -->
+    <div class="googleform-section">
+      <h2 style="color:#3730a3; text-align:center; margin:40px 0 20px 0;">نموذج الاشتراك الرسمي</h2>
+      <iframe class="googleform"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSercyVN6gmzot7YqQBHUOc2do7VF5D80QrjiY7ZTYWQIcE6Bg/viewform?embedded=true"
+        width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <div style="text-align:center; color:#888; font-size:14px; margin-top:8px;">
+        جميع الإجابات تحفظ تلقائياً في قاعدة بيانات آمنة (Google Sheets)
+      </div>
+    </div>
+    <!-- /Google Form Section -->
+
   </div>
   <!-- سكريبت MailerLite -->
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
